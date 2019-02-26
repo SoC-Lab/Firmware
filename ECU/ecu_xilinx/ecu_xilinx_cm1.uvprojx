@@ -335,10 +335,10 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls>--gnu --preinclude=../mbed_config.h --feedback=link_feedback</MiscControls>
+              <MiscControls>--gnu --preinclude=..\..\mbed_config.h --feedback=link_feedback</MiscControls>
               <Define>CORTEX_M1 ARTY_CM1 __ASSERT_MSG DEVICE_PORTOUT=1 TARGET_CORTEX_M DEVICE_USTICKER=1 TOOLCHAIN_ARM TOOLCHAIN_ARM_STD TARGET_CORTEX __MBED__=1 DEVICE_PORTIN=1 TARGET_M1 __CMSIS_RTOS __MBED_CMSIS_RTOS_CM MBED_FAULT_HANDLER_DISABLED NDEBUG DEVICE_SERIAL=1 DEVICE_STDIO_MESSAGES=1 DEVICE_I2C</Define>
               <Undefine></Undefine>
-              <IncludePath>..\mbed-os\targets\TARGET_Xilinx;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device;..\mbed-os\drivers;..\mbed-os;..\mbed-os\cmsis\TARGET_CORTEX_M;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\include;..\mbed-os\platform;..\mbed-os\rtos\TARGET_CORTEX;..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Include;..\mbed-os\rtos\TARGET_CORTEX\rtx5\Include;..\;..\mbed-os\rtos;../mbed-os/rtos/TARGET_CORTEX/rtx4;../mbed-os/rtos/TARGET_CORTEX/rtx5;../mbed-os/rtos/TARGET_CORTEX/rtx5/RTX;../mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config;../mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source;..\mbed-os\hal;..\mbed-os\cmsis;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src</IncludePath>
+              <IncludePath>..\..\mbed-os\targets\TARGET_Xilinx;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device;..\..\mbed-os\drivers;..\..\mbed-os;..\..\mbed-os\cmsis\TARGET_CORTEX_M;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\include;..\..\mbed-os\platform;..\..\mbed-os\rtos\TARGET_CORTEX;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Include;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\Include;..\..\;..\..\mbed-os\rtos;..\..\mbed-os\rtos\TARGET_CORTEX\rtx4;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Config;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source;..\..\mbed-os\hal;..\..\mbed-os\cmsis;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -385,7 +385,7 @@
             <File>
               <FileName>main.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>.\main.cpp</FilePath>
+              <FilePath>..\main.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -395,407 +395,407 @@
             <File>
               <FileName>gpio_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\gpio_api.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\gpio_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_gpio.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_gpio.c</FilePath>
             </File>
             <File>
               <FileName>system_ARTY_CM1.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\system_ARTY_CM1.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\system_ARTY_CM1.c</FilePath>
             </File>
             <File>
               <FileName>startup_ARTY_CM1.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\TOOLCHAIN_ARM_STD\startup_ARTY_CM1.s</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\TOOLCHAIN_ARM_STD\startup_ARTY_CM1.s</FilePath>
             </File>
             <File>
               <FileName>xgpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_extra.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_extra.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_extra.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_g.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_g.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_g.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_intr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_intr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_intr.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_selftest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_selftest.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_selftest.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_sinit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_sinit.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_sinit.c</FilePath>
             </File>
             <File>
               <FileName>outbyte.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\outbyte.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\outbyte.c</FilePath>
             </File>
             <File>
               <FileName>xil_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\xil_assert.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\xil_assert.c</FilePath>
             </File>
             <File>
               <FileName>print.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\print.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\print.c</FilePath>
             </File>
             <File>
               <FileName>mbed_critical.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_critical.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_critical.c</FilePath>
             </File>
             <File>
               <FileName>mbed_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_assert.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_assert.c</FilePath>
             </File>
             <File>
               <FileName>mbed_board.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_board.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_board.c</FilePath>
             </File>
             <File>
               <FileName>mbed_error.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_error.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_error.c</FilePath>
             </File>
             <File>
               <FileName>mbed_error_hist.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_error_hist.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_error_hist.c</FilePath>
             </File>
             <File>
               <FileName>mbed_interface.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_interface.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_interface.c</FilePath>
             </File>
             <File>
               <FileName>mbed_mem_trace.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_mem_trace.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_mem_trace.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_mktime.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_mktime.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_mktime.c</FilePath>
             </File>
             <File>
               <FileName>mbed_poll.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_poll.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_poll.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_retarget.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_retarget.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_retarget.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_rtc_time.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_rtc_time.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_rtc_time.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_sdk_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_sdk_boot.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_sdk_boot.c</FilePath>
             </File>
             <File>
               <FileName>mbed_semihost_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_semihost_api.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_semihost_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_stats.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_stats.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_stats.c</FilePath>
             </File>
             <File>
               <FileName>mbed_wait_api_no_rtos.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_wait_api_no_rtos.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_wait_api_no_rtos.c</FilePath>
             </File>
             <File>
               <FileName>mbed_wait_api_rtos.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_wait_api_rtos.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_wait_api_rtos.cpp</FilePath>
             </File>
             <File>
               <FileName>Stream.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\Stream.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\Stream.cpp</FilePath>
             </File>
             <File>
               <FileName>ATCmdParser.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\ATCmdParser.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\ATCmdParser.cpp</FilePath>
             </File>
             <File>
               <FileName>CallChain.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\CallChain.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\CallChain.cpp</FilePath>
             </File>
             <File>
               <FileName>FileBase.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\FileBase.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\FileBase.cpp</FilePath>
             </File>
             <File>
               <FileName>FileHandle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\FileHandle.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\FileHandle.cpp</FilePath>
             </File>
             <File>
               <FileName>FilePath.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\FilePath.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\FilePath.cpp</FilePath>
             </File>
             <File>
               <FileName>FileSystemHandle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\FileSystemHandle.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\FileSystemHandle.cpp</FilePath>
             </File>
             <File>
               <FileName>LocalFileSystem.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\LocalFileSystem.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\LocalFileSystem.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_alloc_wrappers.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_alloc_wrappers.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_alloc_wrappers.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_application.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_application.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_application.c</FilePath>
             </File>
             <File>
               <FileName>mbed_critical_section_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_critical_section_api.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_critical_section_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_ticker_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_ticker_api.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_ticker_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_us_ticker_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_us_ticker_api.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_us_ticker_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_sleep_manager.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_sleep_manager.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_sleep_manager.c</FilePath>
             </File>
             <File>
               <FileName>us_ticker.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\us_ticker.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\us_ticker.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_g.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_g.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_g.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_intr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_intr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_intr.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_l.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_l.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_l.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_selftest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_selftest.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_selftest.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_sinit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_sinit.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_sinit.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_stats.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_stats.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_stats.c</FilePath>
             </File>
             <File>
               <FileName>serial_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\serial_api.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\serial_api.c</FilePath>
             </File>
             <File>
               <FileName>Serial.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\Serial.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\Serial.cpp</FilePath>
             </File>
             <File>
               <FileName>SerialBase.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\SerialBase.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\SerialBase.cpp</FilePath>
             </File>
             <File>
               <FileName>CThunkBase.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\CThunkBase.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\CThunkBase.cpp</FilePath>
             </File>
             <File>
               <FileName>xiic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic.c</FilePath>
             </File>
             <File>
               <FileName>xiic_dyn_master.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_dyn_master.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_dyn_master.c</FilePath>
             </File>
             <File>
               <FileName>xiic_g.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_g.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_g.c</FilePath>
             </File>
             <File>
               <FileName>xiic_intr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_intr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_intr.c</FilePath>
             </File>
             <File>
               <FileName>xiic_l.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_l.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_l.c</FilePath>
             </File>
             <File>
               <FileName>xiic_master.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_master.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_master.c</FilePath>
             </File>
             <File>
               <FileName>xiic_multi_master.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_multi_master.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_multi_master.c</FilePath>
             </File>
             <File>
               <FileName>xiic_options.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_options.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_options.c</FilePath>
             </File>
             <File>
               <FileName>xiic_selftest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_selftest.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_selftest.c</FilePath>
             </File>
             <File>
               <FileName>xiic_sinit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_sinit.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_sinit.c</FilePath>
             </File>
             <File>
               <FileName>xiic_slave.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_slave.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_slave.c</FilePath>
             </File>
             <File>
               <FileName>xiic_stats.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_stats.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_stats.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_g.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_g.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_g.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_intr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_intr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_intr.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_l.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_l.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_l.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_options.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_options.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_options.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_selftest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_selftest.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_selftest.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_sinit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_sinit.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_sinit.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_stats.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_stats.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_stats.c</FilePath>
             </File>
             <File>
               <FileName>TimerEvent.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\TimerEvent.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\TimerEvent.cpp</FilePath>
             </File>
             <File>
               <FileName>Timer.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\Timer.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\Timer.cpp</FilePath>
             </File>
             <File>
               <FileName>Timeout.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\Timeout.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\Timeout.cpp</FilePath>
             </File>
             <File>
               <FileName>Ticker.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\Ticker.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\Ticker.cpp</FilePath>
             </File>
             <File>
               <FileName>i2c_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\i2c_api.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\i2c_api.c</FilePath>
             </File>
             <File>
               <FileName>I2C.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\I2C.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\I2C.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -805,162 +805,162 @@
             <File>
               <FileName>mbed_boot_arm_std.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\TOOLCHAIN_ARM_STD\mbed_boot_arm_std.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\TOOLCHAIN_ARM_STD\mbed_boot_arm_std.c</FilePath>
             </File>
             <File>
               <FileName>rtx_kernel.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_kernel.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_kernel.c</FilePath>
             </File>
             <File>
               <FileName>rtx_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_delay.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_delay.c</FilePath>
             </File>
             <File>
               <FileName>rtx_evflags.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evflags.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evflags.c</FilePath>
             </File>
             <File>
               <FileName>rtx_evr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evr.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evr.c</FilePath>
             </File>
             <File>
               <FileName>rtx_lib.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_lib.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_lib.c</FilePath>
             </File>
             <File>
               <FileName>rtx_memory.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_memory.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_memory.c</FilePath>
             </File>
             <File>
               <FileName>rtx_mempool.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_mempool.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_mempool.c</FilePath>
             </File>
             <File>
               <FileName>rtx_msgqueue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_msgqueue.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_msgqueue.c</FilePath>
             </File>
             <File>
               <FileName>rtx_mutex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_mutex.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_mutex.c</FilePath>
             </File>
             <File>
               <FileName>rtx_semaphore.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_semaphore.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_semaphore.c</FilePath>
             </File>
             <File>
               <FileName>rtx_system.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_system.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_system.c</FilePath>
             </File>
             <File>
               <FileName>rtx_thread.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_thread.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_thread.c</FilePath>
             </File>
             <File>
               <FileName>rtx_timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_timer.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_timer.c</FilePath>
             </File>
             <File>
               <FileName>RTX_Config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Config\RTX_Config.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Config\RTX_Config.c</FilePath>
             </File>
             <File>
               <FileName>ConditionVariable.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\ConditionVariable.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\ConditionVariable.cpp</FilePath>
             </File>
             <File>
               <FileName>EventFlags.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\EventFlags.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\EventFlags.cpp</FilePath>
             </File>
             <File>
               <FileName>Kernel.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\Kernel.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\Kernel.cpp</FilePath>
             </File>
             <File>
               <FileName>Mutex.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\Mutex.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\Mutex.cpp</FilePath>
             </File>
             <File>
               <FileName>RtosTimer.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\RtosTimer.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\RtosTimer.cpp</FilePath>
             </File>
             <File>
               <FileName>Semaphore.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\Semaphore.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\Semaphore.cpp</FilePath>
             </File>
             <File>
               <FileName>ThisThread.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\ThisThread.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\ThisThread.cpp</FilePath>
             </File>
             <File>
               <FileName>Thread.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\Thread.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\Thread.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\mbed_boot.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\mbed_boot.c</FilePath>
             </File>
             <File>
               <FileName>mbed_rtos_rtx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\mbed_rtos_rtx.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\mbed_rtos_rtx.c</FilePath>
             </File>
             <File>
               <FileName>mbed_rtx_handlers.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_handlers.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_handlers.c</FilePath>
             </File>
             <File>
               <FileName>mbed_rtx_idle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_idle.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_idle.cpp</FilePath>
             </File>
             <File>
               <FileName>SysTimer.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\SysTimer.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\SysTimer.cpp</FilePath>
             </File>
             <File>
               <FileName>cmsis_os1.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx4\cmsis_os1.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx4\cmsis_os1.c</FilePath>
             </File>
             <File>
               <FileName>os_systick.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_systick.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_systick.c</FilePath>
             </File>
             <File>
               <FileName>os_tick_ptim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_tick_ptim.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_tick_ptim.c</FilePath>
             </File>
             <File>
               <FileName>irq_cm0.S</FileName>
               <FileType>2</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\TOOLCHAIN_ARM\TARGET_M0\irq_cm0.S</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\TOOLCHAIN_ARM\TARGET_M0\irq_cm0.S</FilePath>
             </File>
           </Files>
         </Group>
@@ -1295,10 +1295,10 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls>--gnu --preinclude=mbed_config.h --feedback=link_feedback</MiscControls>
+              <MiscControls>--gnu --preinclude=..\..\mbed_config.h --feedback=link_feedback</MiscControls>
               <Define>SIM_BUILD CORTEX_M1 ARTY_CM1 __ASSERT_MSG DEVICE_PORTOUT=1 TARGET_CORTEX_M TOOLCHAIN_ARM TOOLCHAIN_ARM_STD TARGET_CORTEX __MBED__=1 DEVICE_PORTIN=1 TARGET_M1 __CMSIS_RTOS __MBED_CMSIS_RTOS_CM MBED_FAULT_HANDLER_DISABLED DEVICE_SERIAL NDEBUG DEVICE_SERIAL=1 DEVICE_STDIO_MESSAGES=1 DEVICE_I2C</Define>
               <Undefine></Undefine>
-              <IncludePath>..\mbed-os\targets\TARGET_Xilinx;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device;..\mbed-os\drivers;..\mbed-os;..\mbed-os\cmsis\TARGET_CORTEX_M;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\include;..\mbed-os\platform;..\mbed-os\rtos\TARGET_CORTEX;..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Include;..\mbed-os\rtos\TARGET_CORTEX\rtx5\Include;..\;..\mbed-os\rtos;../mbed-os/rtos/TARGET_CORTEX/rtx4;../mbed-os/rtos/TARGET_CORTEX/rtx5;../mbed-os/rtos/TARGET_CORTEX/rtx5/RTX;../mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config;../mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source;..\mbed-os\hal;..\mbed-os\cmsis;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src;..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src</IncludePath>
+              <IncludePath>..\..\mbed-os\targets\TARGET_Xilinx;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device;..\..\mbed-os\drivers;..\..\mbed-os;..\..\mbed-os\cmsis\TARGET_CORTEX_M;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\include;..\..\mbed-os\platform;..\..\mbed-os\rtos\TARGET_CORTEX;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Include;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\Include;..\..\;..\..\mbed-os\rtos;..\..\mbed-os\rtos\TARGET_CORTEX\rtx4;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Config;..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source;..\..\mbed-os\hal;..\..\mbed-os\cmsis;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src;..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1345,7 +1345,7 @@
             <File>
               <FileName>main.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>.\main.cpp</FilePath>
+              <FilePath>..\main.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -1355,407 +1355,407 @@
             <File>
               <FileName>gpio_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\gpio_api.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\gpio_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_gpio.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_gpio.c</FilePath>
             </File>
             <File>
               <FileName>system_ARTY_CM1.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\system_ARTY_CM1.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\system_ARTY_CM1.c</FilePath>
             </File>
             <File>
               <FileName>startup_ARTY_CM1.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\TOOLCHAIN_ARM_STD\startup_ARTY_CM1.s</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\TOOLCHAIN_ARM_STD\startup_ARTY_CM1.s</FilePath>
             </File>
             <File>
               <FileName>xgpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_extra.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_extra.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_extra.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_g.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_g.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_g.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_intr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_intr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_intr.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_selftest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_selftest.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_selftest.c</FilePath>
             </File>
             <File>
               <FileName>xgpio_sinit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_sinit.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\gpio_v4_3\src\xgpio_sinit.c</FilePath>
             </File>
             <File>
               <FileName>outbyte.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\outbyte.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\outbyte.c</FilePath>
             </File>
             <File>
               <FileName>xil_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\xil_assert.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\xil_assert.c</FilePath>
             </File>
             <File>
               <FileName>print.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\print.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\standalone_v6_6\src\print.c</FilePath>
             </File>
             <File>
               <FileName>mbed_critical.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_critical.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_critical.c</FilePath>
             </File>
             <File>
               <FileName>mbed_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_assert.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_assert.c</FilePath>
             </File>
             <File>
               <FileName>mbed_board.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_board.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_board.c</FilePath>
             </File>
             <File>
               <FileName>mbed_error.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_error.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_error.c</FilePath>
             </File>
             <File>
               <FileName>mbed_error_hist.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_error_hist.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_error_hist.c</FilePath>
             </File>
             <File>
               <FileName>mbed_interface.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_interface.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_interface.c</FilePath>
             </File>
             <File>
               <FileName>mbed_mem_trace.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_mem_trace.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_mem_trace.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_mktime.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_mktime.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_mktime.c</FilePath>
             </File>
             <File>
               <FileName>mbed_poll.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_poll.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_poll.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_retarget.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_retarget.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_retarget.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_rtc_time.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_rtc_time.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_rtc_time.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_sdk_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_sdk_boot.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_sdk_boot.c</FilePath>
             </File>
             <File>
               <FileName>mbed_semihost_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_semihost_api.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_semihost_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_stats.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_stats.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_stats.c</FilePath>
             </File>
             <File>
               <FileName>mbed_wait_api_no_rtos.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_wait_api_no_rtos.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_wait_api_no_rtos.c</FilePath>
             </File>
             <File>
               <FileName>mbed_wait_api_rtos.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_wait_api_rtos.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_wait_api_rtos.cpp</FilePath>
             </File>
             <File>
               <FileName>Stream.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\Stream.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\Stream.cpp</FilePath>
             </File>
             <File>
               <FileName>ATCmdParser.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\ATCmdParser.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\ATCmdParser.cpp</FilePath>
             </File>
             <File>
               <FileName>CallChain.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\CallChain.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\CallChain.cpp</FilePath>
             </File>
             <File>
               <FileName>FileBase.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\FileBase.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\FileBase.cpp</FilePath>
             </File>
             <File>
               <FileName>FileHandle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\FileHandle.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\FileHandle.cpp</FilePath>
             </File>
             <File>
               <FileName>FilePath.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\FilePath.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\FilePath.cpp</FilePath>
             </File>
             <File>
               <FileName>FileSystemHandle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\FileSystemHandle.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\FileSystemHandle.cpp</FilePath>
             </File>
             <File>
               <FileName>LocalFileSystem.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\LocalFileSystem.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\LocalFileSystem.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_alloc_wrappers.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\mbed_alloc_wrappers.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_alloc_wrappers.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_application.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\platform\mbed_application.c</FilePath>
+              <FilePath>..\..\mbed-os\platform\mbed_application.c</FilePath>
             </File>
             <File>
               <FileName>mbed_critical_section_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_critical_section_api.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_critical_section_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_ticker_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_ticker_api.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_ticker_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_us_ticker_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_us_ticker_api.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_us_ticker_api.c</FilePath>
             </File>
             <File>
               <FileName>mbed_sleep_manager.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\hal\mbed_sleep_manager.c</FilePath>
+              <FilePath>..\..\mbed-os\hal\mbed_sleep_manager.c</FilePath>
             </File>
             <File>
               <FileName>us_ticker.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\us_ticker.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\us_ticker.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_g.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_g.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_g.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_intr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_intr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_intr.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_l.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_l.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_l.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_selftest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_selftest.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_selftest.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_sinit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_sinit.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_sinit.c</FilePath>
             </File>
             <File>
               <FileName>xuartlite_stats.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_stats.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\uartlite_v3_2\src\xuartlite_stats.c</FilePath>
             </File>
             <File>
               <FileName>serial_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\serial_api.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\serial_api.c</FilePath>
             </File>
             <File>
               <FileName>Serial.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\Serial.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\Serial.cpp</FilePath>
             </File>
             <File>
               <FileName>SerialBase.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\SerialBase.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\SerialBase.cpp</FilePath>
             </File>
             <File>
               <FileName>CThunkBase.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\platform\CThunkBase.cpp</FilePath>
+              <FilePath>..\..\mbed-os\platform\CThunkBase.cpp</FilePath>
             </File>
             <File>
               <FileName>xiic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic.c</FilePath>
             </File>
             <File>
               <FileName>xiic_dyn_master.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_dyn_master.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_dyn_master.c</FilePath>
             </File>
             <File>
               <FileName>xiic_g.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_g.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_g.c</FilePath>
             </File>
             <File>
               <FileName>xiic_intr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_intr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_intr.c</FilePath>
             </File>
             <File>
               <FileName>xiic_l.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_l.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_l.c</FilePath>
             </File>
             <File>
               <FileName>xiic_master.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_master.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_master.c</FilePath>
             </File>
             <File>
               <FileName>xiic_multi_master.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_multi_master.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_multi_master.c</FilePath>
             </File>
             <File>
               <FileName>xiic_options.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_options.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_options.c</FilePath>
             </File>
             <File>
               <FileName>xiic_selftest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_selftest.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_selftest.c</FilePath>
             </File>
             <File>
               <FileName>xiic_sinit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_sinit.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_sinit.c</FilePath>
             </File>
             <File>
               <FileName>xiic_slave.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_slave.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_slave.c</FilePath>
             </File>
             <File>
               <FileName>xiic_stats.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_stats.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\iic_v3_4\src\xiic_stats.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_g.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_g.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_g.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_intr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_intr.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_intr.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_l.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_l.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_l.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_options.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_options.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_options.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_selftest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_selftest.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_selftest.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_sinit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_sinit.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_sinit.c</FilePath>
             </File>
             <File>
               <FileName>xtmrctr_stats.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_stats.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\TARGET_XC7Z020\device\standalone_bsp\Cortex_M1_0\libsrc\tmrctr_v4_4\src\xtmrctr_stats.c</FilePath>
             </File>
             <File>
               <FileName>TimerEvent.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\TimerEvent.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\TimerEvent.cpp</FilePath>
             </File>
             <File>
               <FileName>Timer.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\Timer.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\Timer.cpp</FilePath>
             </File>
             <File>
               <FileName>Timeout.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\Timeout.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\Timeout.cpp</FilePath>
             </File>
             <File>
               <FileName>Ticker.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\Ticker.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\Ticker.cpp</FilePath>
             </File>
             <File>
               <FileName>i2c_api.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\targets\TARGET_Xilinx\i2c_api.c</FilePath>
+              <FilePath>..\..\mbed-os\targets\TARGET_Xilinx\i2c_api.c</FilePath>
             </File>
             <File>
               <FileName>I2C.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\drivers\I2C.cpp</FilePath>
+              <FilePath>..\..\mbed-os\drivers\I2C.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -1765,162 +1765,162 @@
             <File>
               <FileName>mbed_boot_arm_std.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\TOOLCHAIN_ARM_STD\mbed_boot_arm_std.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\TOOLCHAIN_ARM_STD\mbed_boot_arm_std.c</FilePath>
             </File>
             <File>
               <FileName>rtx_kernel.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_kernel.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_kernel.c</FilePath>
             </File>
             <File>
               <FileName>rtx_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_delay.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_delay.c</FilePath>
             </File>
             <File>
               <FileName>rtx_evflags.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evflags.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evflags.c</FilePath>
             </File>
             <File>
               <FileName>rtx_evr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evr.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evr.c</FilePath>
             </File>
             <File>
               <FileName>rtx_lib.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_lib.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_lib.c</FilePath>
             </File>
             <File>
               <FileName>rtx_memory.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_memory.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_memory.c</FilePath>
             </File>
             <File>
               <FileName>rtx_mempool.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_mempool.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_mempool.c</FilePath>
             </File>
             <File>
               <FileName>rtx_msgqueue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_msgqueue.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_msgqueue.c</FilePath>
             </File>
             <File>
               <FileName>rtx_mutex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_mutex.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_mutex.c</FilePath>
             </File>
             <File>
               <FileName>rtx_semaphore.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_semaphore.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_semaphore.c</FilePath>
             </File>
             <File>
               <FileName>rtx_system.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_system.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_system.c</FilePath>
             </File>
             <File>
               <FileName>rtx_thread.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_thread.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_thread.c</FilePath>
             </File>
             <File>
               <FileName>rtx_timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_timer.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_timer.c</FilePath>
             </File>
             <File>
               <FileName>RTX_Config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Config\RTX_Config.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Config\RTX_Config.c</FilePath>
             </File>
             <File>
               <FileName>ConditionVariable.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\ConditionVariable.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\ConditionVariable.cpp</FilePath>
             </File>
             <File>
               <FileName>EventFlags.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\EventFlags.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\EventFlags.cpp</FilePath>
             </File>
             <File>
               <FileName>Kernel.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\Kernel.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\Kernel.cpp</FilePath>
             </File>
             <File>
               <FileName>Mutex.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\Mutex.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\Mutex.cpp</FilePath>
             </File>
             <File>
               <FileName>RtosTimer.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\RtosTimer.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\RtosTimer.cpp</FilePath>
             </File>
             <File>
               <FileName>Semaphore.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\Semaphore.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\Semaphore.cpp</FilePath>
             </File>
             <File>
               <FileName>ThisThread.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\ThisThread.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\ThisThread.cpp</FilePath>
             </File>
             <File>
               <FileName>Thread.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\Thread.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\Thread.cpp</FilePath>
             </File>
             <File>
               <FileName>mbed_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\mbed_boot.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\mbed_boot.c</FilePath>
             </File>
             <File>
               <FileName>mbed_rtos_rtx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\mbed_rtos_rtx.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\mbed_rtos_rtx.c</FilePath>
             </File>
             <File>
               <FileName>mbed_rtx_handlers.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_handlers.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_handlers.c</FilePath>
             </File>
             <File>
               <FileName>mbed_rtx_idle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_idle.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_idle.cpp</FilePath>
             </File>
             <File>
               <FileName>SysTimer.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\SysTimer.cpp</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\SysTimer.cpp</FilePath>
             </File>
             <File>
               <FileName>cmsis_os1.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx4\cmsis_os1.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx4\cmsis_os1.c</FilePath>
             </File>
             <File>
               <FileName>os_systick.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_systick.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_systick.c</FilePath>
             </File>
             <File>
               <FileName>os_tick_ptim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_tick_ptim.c</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_tick_ptim.c</FilePath>
             </File>
             <File>
               <FileName>irq_cm0.S</FileName>
               <FileType>2</FileType>
-              <FilePath>..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\TOOLCHAIN_ARM\TARGET_M0\irq_cm0.S</FilePath>
+              <FilePath>..\..\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\TOOLCHAIN_ARM\TARGET_M0\irq_cm0.S</FilePath>
             </File>
           </Files>
         </Group>
