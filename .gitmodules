@@ -1,0 +1,4 @@
+[submodule "mbed-os"]
+	path = mbed-os
+	url = https://github.com/andi-h/mbed-os.git
+	branch = XC7Z020
