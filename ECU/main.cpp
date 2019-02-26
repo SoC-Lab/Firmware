@@ -28,6 +28,10 @@ DigitalOut led0(LED0, 1);
 DigitalOut led1(LED1, 1);
 DigitalOut led2(LED2, 1);
 DigitalOut led3(LED3, 1);
+DigitalOut led4(LED4, 1);
+DigitalOut led5(LED5, 1);
+DigitalOut led6(LED6, 1);
+DigitalOut led7(LED7, 1);
 Serial uart(STDIO_UART_TX, STDIO_UART_RX);
 Thread thread;
 Ticker taskclass_ticker;
@@ -35,12 +39,19 @@ Ticker taskclass_ticker;
 void led0_thread() {
     while (true) {
 			led0 = !led0;
+			led1 = !led1;
+			led2 = !led2;
+			led3 = !led3;
+			led4 = !led4;
+			led5 = !led5;
+			led6 = !led6;
+			led7 = !led7;
 			
 			if(uart.readable())
 			{
 				if(uart.getc() == 0xAA) 
 					{ 
-						led2 = !led2;
+						//led2 = !led2;
 					}
 			}
 			uart.putc(0xAA);
@@ -84,12 +95,12 @@ extern "C" {
 	
 	void taskclass1(void)
 	{
-		led1 = !led1; 
+		//led1 = !led1; 
 	}
 
 	void UART0_Handler ( void )
 	{
-			led3 = !led3;
+			//led3 = !led3;
 			NVIC_ClearPendingIRQ(UART0_IRQn);
 	}
 }
