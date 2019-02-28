@@ -31,4 +31,4 @@
 call fromelf --vhx --32x1 --output bram_a7.hex objects\xilinx-cm1.axf
 
 @REM - Copy the files to the relevant directories of the hardware project
-copy bram_a7.* ..\..\zedboard_cortex_m1\cores\ip_repo\cm1_ecu_pkg\src
+copy bram_a7.* ..\..\..\zedboard_cortex_m1\cores\ip_repo\cm1_ecu_pkg\src

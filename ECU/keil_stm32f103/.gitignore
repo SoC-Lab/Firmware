@@ -1,4 +1,6 @@
 /objects
+/BUILD
+/DebugConfig
 *.hex
 link_feedback
 *.scvd
