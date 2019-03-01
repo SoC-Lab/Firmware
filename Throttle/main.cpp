@@ -24,14 +24,16 @@
 #ifdef TARGET_NUCLEO_F072RB 
 	#define UART_TX PA_9
 	#define UART_RX PA_10
+	#define THROTTLE_PP BUTTON1
 #elif TARGET_ZEDBOARD 
 	#define UART_TX STDIO_UART_TX
 	#define UART_RX STDIO_UART_RX
+	#define THROTTLE_PP SW0
 #endif
 
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
-DigitalIn i_throttle(BUTTON1);
+DigitalIn i_throttle(THROTTLE_PP);
 Throttle throttle(&uart, &i_throttle, 2e-3);
 
 int main (void)
