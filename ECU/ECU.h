@@ -25,8 +25,8 @@ private:
 		void statemachine();
 
 		Packet packet;
-		Ticker ticker;
-		Serial *uart;
+		RtosTimer* timer;
+		Serial* uart;
 
     uint8_t ini_ok;
     state_t state;

@@ -19,34 +19,28 @@
  */
 
 #include "mbed.h"
+#include "Throttle.h"
+
+#ifdef TARGET_NUCLEO_F072RB 
+	#define UART_TX PA_9
+	#define UART_RX PA_10
+#elif TARGET_ZEDBOARD 
+	#define UART_TX STDIO_UART_TX
+	#define UART_RX STDIO_UART_RX
+#endif
 
 /*******************************************************************/
-DigitalOut led1(LED1, 1);
-Thread thread;
-Ticker taskclass_ticker;
-
-void led0_thread() {
-    while (true) {
-			led1 = !led1;
-
-			wait(1);
-    }
-}
-
-void taskclass()
-{
-	//led3 = !led3; 
-}
+Serial uart(UART_TX, UART_RX, 9600);
+DigitalIn i_throttle(BUTTON1);
+Throttle throttle(&uart, &i_throttle, 0.1, 1.0);
 
 int main (void)
 {
-	taskclass_ticker.attach(&taskclass, 1);
+	throttle.start();
 	
-	thread.start(led0_thread);
-    
-  while(1)
-  {
+	while(1) 
+	{
 
-  }
+	}
 }
 

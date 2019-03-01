@@ -1,7 +1,8 @@
 #include "ECU.h"
 
 ECU::ECU(Serial* uart, double t_period_s, double timeout_s) : uart(uart), t_period_s(t_period_s), timeout_s(timeout_s) {
-    ini_ok = 0;
+  ini_ok = 0;
+	timer = new RtosTimer(callback(this, &ECU::statemachine), osTimerPeriodic);
 }
 
 ECU::~ECU()
@@ -11,13 +12,14 @@ ECU::~ECU()
 
 void ECU::start()
 {
-	ticker.attach(callback(this, &ECU::statemachine), t_period_s);
+	timer->start(t_period_s * 1000.0);
 }
 
 void ECU::stop()
 {
-	ticker.detach();
-	packet.~Packet();
+	timer->stop();
+	delete timer;
+	delete &packet;
 }
 
 void ECU::statemachine()
@@ -85,11 +87,9 @@ void ECU::statemachine()
 	/*** output process image ***/
 	if(!ini_ok);
 	else if(state == REQUEST_TH_POS) { 
-		uart->putc(tx_data); 
-	}
+	uart->putc(tx_data); }
 	else if(state == SEND_MOTOR_PAR) { 
-		uart->putc(tx_data); 
-	}
+	uart->putc(tx_data); }
 	// else;
 
 	ini_ok = 1;

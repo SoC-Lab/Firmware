@@ -14,7 +14,7 @@ typedef enum state_e
 
 class Throttle {
 public:
-    Throttle(Serial* uart, double t_period_s, double timeout_s);
+	Throttle(Serial* uart, DigitalIn* i_throttle, double t_period_s, double timeout_s);
 		~Throttle();
 		void start();
 		void stop();
@@ -23,8 +23,9 @@ private:
 		void statemachine();
 
 		Packet packet;
-		Ticker ticker;
-		Serial *uart;
+		RtosTimer* timer;
+		Serial* uart;
+		DigitalIn* i_throttle;
 
     uint8_t ini_ok;
     state_t state;

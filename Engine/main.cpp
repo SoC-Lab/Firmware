@@ -19,31 +19,26 @@
  */
 
 #include "mbed.h"
+#include "Engine.h"
+
+#ifdef TARGET_NUCLEO_F072RB 
+	#define UART_TX   PA_9
+	#define UART_RX   PA_10
+	#define ENGINE_PP PC_0
+#elif TARGET_ZEDBOARD 
+	#define UART_TX STDIO_UART_TX
+	#define UART_RX STDIO_UART_RX
+#endif
 
 /*******************************************************************/
-DigitalOut led1(LED1, 1);
-Thread thread;
-Ticker taskclass_ticker;
-
-void led0_thread() {
-    while (true) {
-			led1 = !led1;
-
-			wait(1);
-    }
-}
-
-void taskclass()
-{
-	//led3 = !led3; 
-}
+Serial uart(UART_TX, UART_RX, 9600);
+DigitalOut engine_pp(ENGINE_PP, 0);
+Engine engine(&uart, &engine_pp, 0.1, 1.0);
 
 int main (void)
 {
-	taskclass_ticker.attach(&taskclass, 1);
+	engine.start();
 	
-	thread.start(led0_thread);
-    
   while(1)
   {
 
