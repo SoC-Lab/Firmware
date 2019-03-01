@@ -1,0 +1,8 @@
+/objects
+/BUILD
+/DebugConfig
+*.hex
+link_feedback
+*.scvd
+*.uvguix.*
+link_feedback
