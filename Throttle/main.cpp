@@ -25,16 +25,19 @@
 	#define UART_TX PA_9
 	#define UART_RX PA_10
 	#define THROTTLE_PP BUTTON1
+	#define USER_LED LED1
 #elif TARGET_ZEDBOARD 
 	#define UART_TX STDIO_UART_TX
 	#define UART_RX STDIO_UART_RX
-	#define THROTTLE_PP SW0
+	#define THROTTLE_PP GPIO18
+	#define USER_LED LED0
 #endif
 
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
 DigitalIn i_throttle(THROTTLE_PP);
 Throttle throttle(&uart, &i_throttle, 2e-3);
+DigitalOut led(USER_LED);
 
 int main (void)
 {
@@ -42,7 +45,8 @@ int main (void)
 	
 	while(1) 
 	{
-
+		led = !led;
+		wait(0.5);
 	}
 }
 

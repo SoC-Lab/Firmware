@@ -25,16 +25,19 @@
 	#define UART_TX   PA_9
 	#define UART_RX   PA_10
 	#define ENGINE_PP PC_0
+	#define USER_LED LED1
 #elif TARGET_ZEDBOARD 
 	#define UART_TX STDIO_UART_TX
 	#define UART_RX STDIO_UART_RX
-	#define ENGINE_PP GPIO0
+	#define ENGINE_PP GPIO1
+	#define USER_LED LED0
 #endif
 
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
 DigitalOut engine_pp(ENGINE_PP, 0);
 Engine engine(&uart, &engine_pp, 2e-3);
+DigitalOut led(USER_LED);
 
 int main (void)
 {
@@ -42,7 +45,8 @@ int main (void)
 	
   while(1)
   {
-
+		led = !led;
+		wait(0.5);
   }
 }
 
