@@ -32,7 +32,7 @@
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
 DigitalIn i_throttle(BUTTON1);
-Throttle throttle(&uart, &i_throttle, 0.1, 1.0);
+Throttle throttle(&uart, &i_throttle, 2e-3);
 
 int main (void)
 {

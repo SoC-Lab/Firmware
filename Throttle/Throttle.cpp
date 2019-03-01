@@ -1,6 +1,6 @@
 #include "Throttle.h"
 
-Throttle::Throttle(Serial* uart, DigitalIn* i_throttle, double t_period_s, double timeout_s) : uart(uart), i_throttle(i_throttle), t_period_s(t_period_s), timeout_s(timeout_s) {
+Throttle::Throttle(Serial* uart, DigitalIn* i_throttle, double t_period_s) : uart(uart), i_throttle(i_throttle), t_period_s(t_period_s) {
   ini_ok = 0;
 	timer = new RtosTimer(callback(this, &Throttle::statemachine), osTimerPeriodic);
 }

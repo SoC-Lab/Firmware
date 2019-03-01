@@ -65,6 +65,9 @@ void ECU::statemachine()
 			tx_data = packet.build_control_packet(THS_ID, ECU_ID, REQUEST); 
 			state = REQUEST_TH_POS;
 		}
+		else if(state == RECEIVE_TH_POS && t > timeout_s) {  
+			state = START;
+		}
 		else if(state == CALC_MOTOR_PAR && t > 0) {
 			motor_par = throttle_pos;
 			tx_data = packet.build_data_packet(MCU_ID, motor_par); 
@@ -74,6 +77,8 @@ void ECU::statemachine()
 			state = WAIT_FOR_MCU_ACK;  
 		}
 		else if(state == WAIT_FOR_MCU_ACK && t > 0 && packet.validate_control_packet(ECU_ID, MCU_ID, ACKNOWLEDGE, rx_data)) { 
+			attempt = 1; 
+			tx_data = packet.build_control_packet(THS_ID, ECU_ID, REQUEST); 
 			state = REQUEST_TH_POS; 
 		}
 		else if(state == WAIT_FOR_MCU_ACK && t > timeout_s && attempt < 4) { 
@@ -81,15 +86,16 @@ void ECU::statemachine()
 			tx_data = packet.build_data_packet(MCU_ID, throttle_pos);              
 			state = SEND_MOTOR_PAR;                    
 		}
+		else if(state == WAIT_FOR_MCU_ACK && t > timeout_s) {          
+			state = START;                   
+		}
 		// else;
 	} while(state != m_state);
 
 	/*** output process image ***/
 	if(!ini_ok);
-	else if(state == REQUEST_TH_POS) { 
-	uart->putc(tx_data); }
-	else if(state == SEND_MOTOR_PAR) { 
-	uart->putc(tx_data); }
+	else if(state == REQUEST_TH_POS) { uart->putc(tx_data); }
+	else if(state == SEND_MOTOR_PAR) { uart->putc(tx_data); }
 	// else;
 
 	ini_ok = 1;

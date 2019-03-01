@@ -33,7 +33,7 @@
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
 DigitalOut engine_pp(ENGINE_PP, 0);
-Engine engine(&uart, &engine_pp, 0.1, 1.0);
+Engine engine(&uart, &engine_pp, 2e-3);
 
 int main (void)
 {

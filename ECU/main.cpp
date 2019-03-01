@@ -31,7 +31,7 @@
 
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
-ECU ecu(&uart, 0.1, 1.0);
+ECU ecu(&uart, 2e-3, 0.02);
 
 int main (void)
 {

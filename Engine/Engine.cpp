@@ -1,6 +1,6 @@
 #include "Engine.h"
 
-Engine::Engine(Serial* uart, DigitalOut* engine, double t_period_s, double timeout_s) : uart(uart), engine(engine), t_period_s(t_period_s), timeout_s(timeout_s) {
+Engine::Engine(Serial* uart, DigitalOut* engine, double t_period_s) : uart(uart), engine(engine), t_period_s(t_period_s) {
   ini_ok = 0;
 	timer = new RtosTimer(callback(this, &Engine::statemachine), osTimerPeriodic);
 }

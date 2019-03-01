@@ -14,7 +14,7 @@ typedef enum state_e
 
 class Engine {
 public:
-	Engine(Serial* uart, DigitalOut* engine, double t_period_s, double timeout_s);
+	Engine(Serial* uart, DigitalOut* engine, double t_period_s);
 	~Engine();
 	void start();
 	void stop();
@@ -34,7 +34,6 @@ private:
 	uint8_t tx_data;
 	uint8_t motor_param;
 	double t_period_s;
-	double timeout_s;
 };
 
 #endif // __ENGINE_H
