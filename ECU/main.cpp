@@ -36,8 +36,7 @@ ECU ecu(&uart, 2e-3, 0.02);
 int main (void)
 {
 	ecu.start();
-	//uart.putc(0xAA);
-	
+
   while(1)
   {
 
