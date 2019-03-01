@@ -28,6 +28,7 @@
 #elif TARGET_ZEDBOARD 
 	#define UART_TX STDIO_UART_TX
 	#define UART_RX STDIO_UART_RX
+	#define ENGINE_PP GPIO0
 #endif
 
 /*******************************************************************/
