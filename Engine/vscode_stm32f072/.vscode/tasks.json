@@ -1,0 +1,138 @@
+ {
+ // See https://go.microsoft.com/fwlink/?LinkId=733558
+// for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build GCC NUCLEO_F072RB debug",
+            "type": "shell",
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^\\[(Error|Warning)]\\s+(.+)@(\\d+),(\\d+):\\s+(.*)$",
+                    "file": 2,
+                    "line": 3,
+                    "column": 4,
+                    "severity": 1,
+                    "message": 5
+                }
+            },
+            "args": [
+                "compile",
+                "-t",
+                "GCC_ARM",
+                "-m",
+                "nucleo_f072rb",
+                "--source",
+                ".",
+                "--source",
+                "..\\application",
+                "--source",
+                "..\\..\\Library",
+                "--source",
+                "..\\..\\mbed-os",
+                "--profile",
+                "../../mbed-os/tools/profiles/debug.json"
+            ],
+            "linux": {
+                "command": "mbed"
+            },
+            "osx": {
+                "command": "mbed"
+            },
+            "windows": {
+                "command": "mbed.exe"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build ARM NUCLEO_F072RB debug",
+            "type": "shell",
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^\\[(Error|Warning)]\\s+(.+)@(\\d+),(\\d+):\\s+(.*)$",
+                    "file": 2,
+                    "line": 3,
+                    "column": 4,
+                    "severity": 1,
+                    "message": 5
+                }
+            },
+            "args": [
+                "compile",
+                "-t",
+                "ARM",
+                "-m",
+                "nucleo_f072rb",
+                "--source",
+                ".",
+                "--source",
+                "..\\application",
+                "--source",
+                "..\\..\\Library",
+                "--source",
+                "..\\..\\mbed-os",
+                "--profile",
+                "../../mbed-os/tools/profiles/debug.json"
+            ],
+            "linux": {
+                "command": "mbed"
+            },
+            "osx": {
+                "command": "mbed"
+            },
+            "windows": {
+                "command": "mbed.exe"
+            }
+        },
+        {
+            "label": "build and flash GCC NUCLEO_F072RB",
+            "type": "shell",
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^\\[(Error|Warning)]\\s+(.+)@(\\d+),(\\d+):\\s+(.*)$",
+                    "file": 2,
+                    "line": 3,
+                    "column": 4,
+                    "severity": 1,
+                    "message": 5
+                }
+            },
+            "args": [
+                "compile",
+                "-t",
+                "GCC_ARM",
+                "-m",
+                "nucleo_f072rb",
+                "--source",
+                ".",
+                "--source",
+                "..\\application",
+                "--source",
+                "..\\..\\Library",
+                "--source",
+                "..\\..\\mbed-os",
+                "-f",
+                "--profile",
+                "../../mbed-os/tools/profiles/release.json"
+            ],
+            "linux": {
+                "command": "mbed"
+            },
+            "osx": {
+                "command": "mbed"
+            },
+            "windows": {
+                "command": "mbed.exe"
+            }
+        },
+    ]
+}

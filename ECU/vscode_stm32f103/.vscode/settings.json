@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "cstdlib": "cpp",
+        "cstddef": "cpp"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Disabled"
+}

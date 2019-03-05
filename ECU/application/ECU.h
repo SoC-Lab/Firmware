@@ -6,7 +6,9 @@
 
 typedef enum state_e 
 {
-    START = 1,
+		WAIT_FOR_SILENT_BUS = 1,
+		BUS_BUSY,
+    START,
     REQUEST_TH_POS,
     RECEIVE_TH_POS,
     CALC_MOTOR_PAR,

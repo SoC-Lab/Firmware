@@ -34,6 +34,9 @@ private:
 	uint8_t tx_data;
 	uint8_t motor_param;
 	double t_period_s;
+DigitalOut* led2;
+DigitalOut* led3;
+
 };
 
 #endif // __ENGINE_H

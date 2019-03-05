@@ -383,19 +383,19 @@
           <GroupName>Application</GroupName>
           <Files>
             <File>
-              <FileName>main.cpp</FileName>
+              <FileName>Packet.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\main.cpp</FilePath>
+              <FilePath>..\..\Library\Packet.cpp</FilePath>
             </File>
             <File>
               <FileName>Engine.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\Engine.cpp</FilePath>
+              <FilePath>..\application\Engine.cpp</FilePath>
             </File>
             <File>
-              <FileName>Packet.cpp</FileName>
+              <FileName>main.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\..\Library\Packet.cpp</FilePath>
+              <FilePath>..\application\main.cpp</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "D:\\Projects\\SoC_Lab\\Firmware\\Throttle\\vscode_stm32f072"
+		},
+		{
+			"path": "D:\\Projects\\SoC_Lab\\Firmware\\Throttle\\application"
+		},
+		{
+			"path": "D:\\Projects\\SoC_Lab\\Firmware\\Library"
+		},
+		{
+			"path": "D:\\Projects\\SoC_Lab\\Firmware\\mbed-os"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"gpio_api.h": "c",
+			"serial_api.h": "c",
+			"us_ticker_data.h": "c",
+			"pinmap.h": "c",
+			"pinnames.h": "c",
+			"device.h": "c",
+			"xstatus.h": "c",
+			"xil_assert.h": "c",
+			"cstdlib": "cpp",
+			"cstddef": "cpp"
+		}
+	}
+}

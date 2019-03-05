@@ -19,34 +19,36 @@
  */
 
 #include "mbed.h"
-#include "Throttle.h"
+#include "ECU.h"
 
-#ifdef TARGET_NUCLEO_F072RB 
+#ifdef TARGET_NUCLEO_F103RB 
 	#define UART_TX PA_9
 	#define UART_RX PA_10
-	#define THROTTLE_PP BUTTON1
 	#define USER_LED LED1
+	#define ENGINE_PP PC_0
+	#define THROTTLE_PP BUTTON1
 #elif TARGET_ZEDBOARD 
 	#define UART_TX STDIO_UART_TX
 	#define UART_RX STDIO_UART_RX
-	#define THROTTLE_PP GPIO18
 	#define USER_LED LED0
+	#define ENGINE_PP GPIO1
+	#define THROTTLE_PP GPIO16
 #endif
 
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
-DigitalIn i_throttle(THROTTLE_PP);
-Throttle throttle(&uart, &i_throttle, 2e-3);
+ECU ecu(&uart, 2e-3, 0.2);
 DigitalOut led(USER_LED);
+DigitalOut engine(ENGINE_PP, 1);
 
 int main (void)
 {
-	throttle.start();
-	
-	while(1) 
-	{
+	ecu.start();
+
+  while(1)
+  {
 		led = !led;
-		wait(0.5);
-	}
+		wait(0.25);
+  }
 }
 

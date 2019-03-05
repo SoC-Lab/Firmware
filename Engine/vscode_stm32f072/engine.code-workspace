@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "D:\\Projects\\SoC_Lab\\Firmware\\Library"
+		},
+		{
+			"path": "D:\\Projects\\SoC_Lab\\Firmware\\mbed-os"
+		},
+		{
+			"path": "D:\\Projects\\SoC_Lab\\Firmware\\Engine\\vscode_stm32f072"
+		},
+		{
+			"path": "D:\\Projects\\SoC_Lab\\Firmware\\Engine\\application"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cstdlib": "cpp",
+			"cstddef": "cpp"
+		}
+	}
+}

@@ -54,7 +54,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>1</BrowseInformation>
+          <BrowseInformation>0</BrowseInformation>
           <ListingPath>.\BUILD\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -383,19 +383,19 @@
           <GroupName>Application</GroupName>
           <Files>
             <File>
+              <FileName>Packet.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\Library\Packet.cpp</FilePath>
+            </File>
+            <File>
               <FileName>main.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\main.cpp</FilePath>
+              <FilePath>..\application\main.cpp</FilePath>
             </File>
             <File>
               <FileName>Throttle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\Throttle.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Packet.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\..\Library\Packet.cpp</FilePath>
+              <FilePath>..\application\Throttle.cpp</FilePath>
             </File>
           </Files>
         </Group>

@@ -40,12 +40,21 @@ void ECU::statemachine()
 		m_state = state;
 
 		if(!ini_ok) { 
-			state = START;
+			state = WAIT_FOR_SILENT_BUS;
 			m_state = state;
 			attempt = 0;   
 			throttle_pos = 0;
 			motor_par = 0;
 			tx_data = 0;             
+		}
+		else if(state == WAIT_FOR_SILENT_BUS && t > 0 && packet.validate_control_packet(THS_ID, ECU_ID, REQUEST, rx_data)) {
+			state = BUS_BUSY;
+		}			
+		else if(state == WAIT_FOR_SILENT_BUS && t > timeout_s) {
+			state = START;
+		}
+		else if(state == BUS_BUSY && t > 0) {
+			state = WAIT_FOR_SILENT_BUS;
 		}
 		else if(state == START && t > 0) {
 			attempt = 1; 

@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "ARM",
+            "includePath": [
+                "${workspaceFolder}\\*",
+                "${workspaceFolder}\\..\\application\\*",
+                "${workspaceFolder}\\..\\..\\mbed-os\\*",
+                "C:\\ProgramData\\chocolatey\\lib\\gcc-arm-embedded\\tools\\arm-none-eabi\\include\\c++\\7.2.1\\*",
+                "C:\\ProgramData\\chocolatey\\lib\\gcc-arm-embedded\\tools\\arm-none-eabi\\include\\c++\\7.2.1\\arm-none-eabi\\*",
+                "C:\\ProgramData\\chocolatey\\lib\\gcc-arm-embedded\\tools\\lib\\gcc\\arm-none-eabi\\7.2.1\\include\\*"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}\\*",
+                    "${workspaceFolder}\\..\\application\\*",
+                    "${workspaceFolder}\\..\\..\\mbed-os\\*",
+                    "C:\\ProgramData\\chocolatey\\lib\\gcc-arm-embedded\\tools\\arm-none-eabi\\include\\c++\\7.2.1\\*",
+                    "C:\\ProgramData\\chocolatey\\lib\\gcc-arm-embedded\\tools\\arm-none-eabi\\include\\c++\\7.2.1\\arm-none-eabi\\*",
+                    "C:\\ProgramData\\chocolatey\\lib\\gcc-arm-embedded\\tools\\lib\\gcc\\arm-none-eabi\\7.2.1\\include\\*"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
+            }
+        }
+    ],
+    "version": 4
+}
