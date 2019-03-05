@@ -1,0 +1,7 @@
+{
+    "target_overrides": {
+        "*": {
+            "platform.fatal-error-auto-reboot-enabled": "1"
+        }
+    }
+}
