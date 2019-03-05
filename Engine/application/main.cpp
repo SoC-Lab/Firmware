@@ -26,7 +26,7 @@
 	#define UART_RX   PA_10
 	#define USER_LED LED1
 	#define ENGINE_PP PC_0
-	#define THROTTLE_PP BUTTON1
+	#define THROTTLE_PP PC_1
 #elif TARGET_ZEDBOARD 
 	#define UART_TX STDIO_UART_TX
 	#define UART_RX STDIO_UART_RX

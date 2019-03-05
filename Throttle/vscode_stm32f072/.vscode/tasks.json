@@ -75,7 +75,7 @@
                 "--source",
                 "..\\..\\mbed-os",
                 "--profile",
-                "mbed-os/tools/profiles/debug.json"
+                "../../mbed-os/tools/profiles/debug.json"
             ],
             "linux": {
                 "command": "mbed"
@@ -118,7 +118,7 @@
                 "..\\..\\mbed-os",
                 "-f",
                 "--profile",
-                "mbed-os/tools/profiles/release.json"
+                "../../mbed-os/tools/profiles/release.json"
             ],
             "linux": {
                 "command": "mbed"

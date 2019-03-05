@@ -26,13 +26,13 @@
                 { "text": "-interpreter-exec console \"monitor arm semihosting enable\"", "ignoreFailures": false },
                 { "text": "-target-download", "description": "flash target", "ignoreFailures": false }
             ],
-            /*"logging": {
+            "logging": {
                 "moduleLoad": true,
                 "trace": true,
                 "engineLogging": true,
                 "programOutput": true,
                 "exceptions": true
-            },*/
+            },
             "linux": {
                 "MIMode": "gdb",
                 "MIDebuggerPath": "/usr/bin/arm-none-eabi-gdb",
