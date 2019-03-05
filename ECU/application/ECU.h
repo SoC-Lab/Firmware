@@ -18,7 +18,7 @@ typedef enum state_e
 
 class ECU {
 public:
-    ECU(Serial* uart, double t_period_s, double timeout_s);
+    ECU(Serial* uart, DigitalOut* status, double t_period_s, double timeout_s);
 		~ECU();
 		void start();
 		void stop();
@@ -29,6 +29,7 @@ private:
 		Packet packet;
 		RtosTimer* timer;
 		Serial* uart;
+    DigitalOut* status;
 
     uint8_t ini_ok;
     state_t state;

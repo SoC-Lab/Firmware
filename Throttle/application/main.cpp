@@ -38,8 +38,8 @@
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
 DigitalIn i_throttle(THROTTLE_PP);
-Throttle throttle(&uart, &i_throttle, 2e-3);
 DigitalOut led(USER_LED);
+Throttle throttle(&uart, &i_throttle, &led, 1e-3);
 
 int main (void)
 {
@@ -47,8 +47,7 @@ int main (void)
 	
 	while(1) 
 	{
-		led = !led;
-		wait(0.5);
+
 	}
 }
 

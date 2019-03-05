@@ -1,6 +1,6 @@
 #include "Throttle.h"
 
-Throttle::Throttle(Serial* uart, DigitalIn* i_throttle, double t_period_s) : uart(uart), i_throttle(i_throttle), t_period_s(t_period_s) {
+Throttle::Throttle(Serial* uart, DigitalIn* i_throttle, DigitalOut* status, double t_period_s) : uart(uart), i_throttle(i_throttle), status(status), t_period_s(t_period_s) {
   ini_ok = 0;
 	timer = new RtosTimer(callback(this, &Throttle::statemachine), osTimerPeriodic);
 }
@@ -42,16 +42,27 @@ void Throttle::statemachine()
 
         if(!ini_ok) { 
             state = IDLE;
-            m_state = state;    
-        }
+            m_state = state; 
+						attempts = 0;
+				}
         else if(state != IDLE && t > 0 && error != 0) {
             tx_data = packet.build_control_packet(ECU_ID, THS_ID, ERROR_1);
             state = SEND_ERROR;
         }
-        else if(state == IDLE && t > 0 && packet.validate_control_packet(THS_ID, ECU_ID, REQUEST, rx_data)) {
-            state = WAIT_FOR_ECU_REQ;
+        else if(state == IDLE && t > 0 && attempts < 2 && packet.validate_control_packet(THS_ID, ECU_ID, REQUEST, rx_data)) {
+						attempts++;
         }
-        else if(state == WAIT_FOR_ECU_REQ && t > 0 && packet.validate_data_packet(THS_ID, rx_data)) {
+				else if(state == IDLE && t > 0 && packet.validate_control_packet(THS_ID, ECU_ID, REQUEST, rx_data)) {
+						attempts = 0;
+            tx_data = packet.build_data_packet(ECU_ID, throttle_pos);
+            state = SEND_TH_POS;
+        }
+				else if(state == IDLE && t > 0 && packet.validate_data_packet(ECU_ID, rx_data)) {
+						state = BUS_BUSY;
+        }
+        else if(state == BUS_BUSY && t > 0)
+        {
+            attempts = 0;
             state = IDLE;
         }
         else if(state == WAIT_FOR_ECU_REQ && t > 0 && packet.validate_control_packet(THS_ID, ECU_ID, REQUEST, rx_data)) {
@@ -69,8 +80,11 @@ void Throttle::statemachine()
 
     /*** output process image ***/
     if(!ini_ok);
-    else if(state == SEND_TH_POS) { uart->putc(tx_data);  }
-    else if(state == SEND_ERROR)  { uart->putc(tx_data);  }
+    else if(state == IDLE)             { *status = 0;                        }
+    else if(state == BUS_BUSY)         { *status = 1;                        }
+    else if(state == WAIT_FOR_ECU_REQ) { *status = 1;                        }
+    else if(state == SEND_TH_POS)      { *status = 0;  uart->putc(tx_data);  }
+    else if(state == SEND_ERROR)       { uart->putc(tx_data);                }
     // else;
 
     ini_ok = 1;

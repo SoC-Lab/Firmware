@@ -7,6 +7,7 @@
 typedef enum state_e 
 {
     IDLE = 1,
+		BUS_BUSY,
     WAIT_FOR_ECU_REQ,
     SEND_TH_POS,
     SEND_ERROR,
@@ -14,7 +15,7 @@ typedef enum state_e
 
 class Throttle {
 public:
-	Throttle(Serial* uart, DigitalIn* i_throttle, double t_period_s);
+	Throttle(Serial* uart, DigitalIn* i_throttle, DigitalOut* status, double t_period_s);
 		~Throttle();
 		void start();
 		void stop();
@@ -26,7 +27,9 @@ private:
 		RtosTimer* timer;
 		Serial* uart;
 		DigitalIn* i_throttle;
+		DigitalOut* status;
 
+		uint8_t attempts;
     uint8_t ini_ok;
     state_t state;
     state_t m_state;

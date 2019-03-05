@@ -1,6 +1,6 @@
 #include "ECU.h"
 
-ECU::ECU(Serial* uart, double t_period_s, double timeout_s) : uart(uart), t_period_s(t_period_s), timeout_s(timeout_s) {
+ECU::ECU(Serial* uart, DigitalOut* status, double t_period_s, double timeout_s) : uart(uart), status(status), t_period_s(t_period_s), timeout_s(timeout_s) {
   ini_ok = 0;
 	timer = new RtosTimer(callback(this, &ECU::statemachine), osTimerPeriodic);
 }
@@ -50,7 +50,7 @@ void ECU::statemachine()
 		else if(state == WAIT_FOR_SILENT_BUS && t > 0 && packet.validate_control_packet(THS_ID, ECU_ID, REQUEST, rx_data)) {
 			state = BUS_BUSY;
 		}			
-		else if(state == WAIT_FOR_SILENT_BUS && t > timeout_s) {
+		else if(state == WAIT_FOR_SILENT_BUS && t > 10 * timeout_s) {
 			state = START;
 		}
 		else if(state == BUS_BUSY && t > 0) {
@@ -103,8 +103,12 @@ void ECU::statemachine()
 
 	/*** output process image ***/
 	if(!ini_ok);
-	else if(state == REQUEST_TH_POS) { uart->putc(tx_data); }
-	else if(state == SEND_MOTOR_PAR) { uart->putc(tx_data); }
+	else if(state == WAIT_FOR_SILENT_BUS) { *status = 0;         }
+	else if(state == BUS_BUSY)            { *status = 1;         }
+	else if(state == REQUEST_TH_POS)      { uart->putc(tx_data); }
+	else if(state == RECEIVE_TH_POS)      { *status = 1;         }
+	else if(state == SEND_MOTOR_PAR)      { uart->putc(tx_data); }
+	else if(state == WAIT_FOR_MCU_ACK)    { *status = 0;         }
 	// else;
 
 	ini_ok = 1;

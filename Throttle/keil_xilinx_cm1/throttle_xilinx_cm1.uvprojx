@@ -54,7 +54,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>0</BrowseInformation>
+          <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\objects\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -383,11 +383,6 @@
           <GroupName>application</GroupName>
           <Files>
             <File>
-              <FileName>main.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\main.cpp</FilePath>
-            </File>
-            <File>
               <FileName>Packet.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\..\Library\Packet.cpp</FilePath>
@@ -395,7 +390,12 @@
             <File>
               <FileName>Throttle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\Throttle.cpp</FilePath>
+              <FilePath>..\application\Throttle.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\application\main.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -1353,11 +1353,6 @@
           <GroupName>application</GroupName>
           <Files>
             <File>
-              <FileName>main.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\main.cpp</FilePath>
-            </File>
-            <File>
               <FileName>Packet.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\..\Library\Packet.cpp</FilePath>
@@ -1365,7 +1360,12 @@
             <File>
               <FileName>Throttle.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\Throttle.cpp</FilePath>
+              <FilePath>..\application\Throttle.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\application\main.cpp</FilePath>
             </File>
           </Files>
         </Group>

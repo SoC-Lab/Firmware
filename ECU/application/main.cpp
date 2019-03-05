@@ -37,8 +37,8 @@
 
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
-ECU ecu(&uart, 2e-3, 0.2);
 DigitalOut led(USER_LED);
+ECU ecu(&uart, &led, 1e-3, 0.05);
 
 int main (void)
 {
@@ -46,8 +46,7 @@ int main (void)
 
   while(1)
   {
-		led = !led;
-		wait(0.25);
+
   }
 }
 

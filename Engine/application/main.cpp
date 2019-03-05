@@ -38,8 +38,8 @@
 /*******************************************************************/
 Serial uart(UART_TX, UART_RX, 9600);
 DigitalOut engine_pp(ENGINE_PP, 1);
-Engine engine(&uart, &engine_pp, 2e-3);
 DigitalOut led(USER_LED);
+Engine engine(&uart, &engine_pp, &led, 1e-3);
 
 int main (void)
 {
@@ -47,8 +47,7 @@ int main (void)
 	
   while(1)
   {
-		led = !led;
-		wait(1.0);
+
   }
 }
 
