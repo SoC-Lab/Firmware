@@ -44,10 +44,6 @@
             "windows": {
                 "command": "mbed.exe"
             },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
         },
         {
             "label": "build ARM NUCLEO_F072RB debug",
@@ -132,6 +128,10 @@
             },
             "windows": {
                 "command": "mbed.exe"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         },
     ]

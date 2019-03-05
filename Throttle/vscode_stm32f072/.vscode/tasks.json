@@ -43,10 +43,6 @@
             },
             "windows": {
                 "command": "mbed.exe"
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
             }
         },
         {
@@ -132,6 +128,10 @@
             },
             "windows": {
                 "command": "mbed.exe"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         },
     ]
